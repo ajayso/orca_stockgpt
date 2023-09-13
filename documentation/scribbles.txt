@@ -1,0 +1,51 @@
+
+Speech is much richer than text it has semantic and paralinguistice information like the tone. Wouldnt it make better sense to have models which speech itself is broken down into tokens and has the semantic which is the structure and paralinguistice which is tone/ frequency. The next step is to connect these to LLMs vocabulary. The idea does sound very interesting I assume. At a simplistic level this is multimodal which involves a speech language model and LLM working in collaboration. Now extend this thinking to stock market 
+
+1. Use a Long range transformer for forecasting This will understand the trend and give the forecast values with signals and patterns
+2. A model adaptor which matches the output of 1 to text embeddings
+3. Cross modal instruction data is used to train the model to handle multi modal instruction and analyzer cross modal interactions
+4.The language model and model's adaptor setting are being modified for cross modal education .the stock Long range transformer is frozed.
+
+In bid to extend LLMs with Stock Market reasoning going multimodal is best way ahead. This is basis of multimodal architecture which can be used in BFSI and other domains. 
+#Foodforthought #LLM #AI
+
+
+Text understanding required here
+1.  Speech language multi modal with a big language model that processes voice and text can make multi modal information
+2. Speech signals are broken down into distinct tokens and extended into LLMs vocabulary.
+3. LLM requires multi modal data and powerful computation resources to be retrained.
+
+LLaSM sizable speech and language model with cross modal conversational capabilities that can comprehend and adhere to spoken commands.
+
+Use well trained speech modal encoder and LLM much like LLava which makes LLaSM more resource friendly.
+
+Specifically employ Whisper as a voice encoder to incorporate the speech signals 
+Big Language model's input text embedding are matched with speech embeddings using a model adaptor.
+To create interleaved sequences the speech and text embeddings are combined.
+The interleaved sequences are fed into LLM for supervised fine tuning.
+
+Steps of training
+Pre-training
+-------------
+1. Employ public ASR datasets for the modality adaption pre-training in the initial stage.
+2. Model adaptor has been trained to align the voice and text embedding 
+3. LLM and speech encoder have been locked, most of modal's parameters still needs to be fixed
+
+Next Steps
+----------
+
+Cross modal instruction data is used to train the model to handle multi modal instruction and analyzer cross modal interactions
+
+The language model and model's adaptor setting are being modified for cross modal education .the voice encoder is frozed.
+
+--------------
+
+Important notes
+
+Few open source speech text cross modal instruction following datasets are available. Thus they created and released LLaSM Audio Instructions dataset. 
+Dataset is created by carefully choosing conversations from GPT LLM, ShareGPT and WizardLM and the creating a significant quantity of conversational audi data using text to speech tech.
+
+
+Small portion of modal;s adaptor's parameter are introduced during this stage
+
+
